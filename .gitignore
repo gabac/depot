@@ -13,3 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+depot.esproj/user.gaba.espressostorage
+
+depot.esproj/Project.espressostorage
