@@ -78,6 +78,6 @@ class ProductTest < ActiveSupport::TestCase
 								image_url: "fred.gif")
 		
 		assert !product.save
-		assert_equal "is too short (minimum is 10 characters)", product.errors[:title].join('; ')
+		assert_equal "At least 10 characters has to be entered", product.errors[:title].join('; ')
 	end
 end

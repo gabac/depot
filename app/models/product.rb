@@ -7,6 +7,7 @@ class Product < ActiveRecord::Base
 	}
 	
 	validates :title, length: {
-		minimum: 10
+		minimum: 10,
+		message: 'At least 10 characters has to be entered'
 	}
 end
