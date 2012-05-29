@@ -43,3 +43,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug'
+
+#To use twitter bootstrap
+gem "twitter-bootstrap-rails"
