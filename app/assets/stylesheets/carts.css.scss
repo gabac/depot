@@ -1,9 +1,8 @@
-.carts, #side #chart {
-  .cart_title {
-    font: 120% bold;
+.carts, #cart {
+  h3 {
+	padding-bottom: 5px;
   }
-
-  .item_price, .total_line {
+  .item_price, .total_line td{
     text-align: right;
   }
 

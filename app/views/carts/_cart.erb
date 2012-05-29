@@ -1,12 +1,21 @@
-<div class="cart_title">Your Cart</div>
-<table>
-  <%= render(cart.line_items) %>
-  <tr class="total_line">
-    <td colspan="2">Total</td>
-    <td class="total_cell"><%= number_to_currency(cart.total_price) %></td>
-  </tr>
-
-</table>
-
-<%= button_to 'Empty cart', @cart, method: :delete,
-    confirm: 'Are you sure?' %>
+<div class="well sidebar-nav">
+	<h3 class="cart_title">Your Cart</h3>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Item</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+	  <%= render(cart.line_items) %>
+	  <tr class="total_line">
+	    <td colspan="2">Total</td>
+	    <td class="total_cell"><%= number_to_currency(cart.total_price) %></td>
+	  </tr>
+	
+	</table>
+	
+	<%= button_to 'Empty cart', @cart, method: :delete,
+	    confirm: 'Are you sure?', class:'btn btn-danger' %>
+</div><!--/.well -->

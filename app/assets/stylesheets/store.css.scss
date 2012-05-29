@@ -2,21 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* START_HIGHLIGHT */
 .store {
   h1 {
     margin: 0;
     padding-bottom: 0.5em;
     font:  150% sans-serif;
     color: #226;
-    border-bottom: 3px dotted #77d;
+    border-bottom: 3px solid #999;
   }
 
   /* An entry in the store catalog */
   .entry {
     overflow: auto;
     margin-top: 1em;
-    border-bottom: 1px dotted #77d;
+    border-bottom: 1px solid #999;
     min-height: 100px;
 
     img {
@@ -54,4 +53,3 @@
     }
   }
 }
-/* END_HIGHLIGHT */
